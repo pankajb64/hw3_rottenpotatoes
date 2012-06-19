@@ -21,11 +21,13 @@ Background: movies have been added to database
 
   And I am on the RottenPotatoes home page
 
-Scenario: sort movies alphabetically
+Scenario: sort movies alphabetically	
   When I follow "Movie Title"
+  Then I should see Amelie before Aladdin
+  And show me the page
   # your steps here
 
 Scenario: sort movies in increasing order of release date
-  When i follow "Release Date"
+  When I follow "Release Date"
   # your steps here
 
